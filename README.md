@@ -45,4 +45,8 @@ npm run dev
 
 ## تواصل
 - **الاسم:** Ahmed Jamal
+<<<<<<< HEAD
 - **الإيميل:** elhwtdoba@gmail.com 
+=======
+- **الإيميل:** elhwtdoba@gmail.com
+>>>>>>> f1feea6cec24a3207877d1143cae72ceca453710
