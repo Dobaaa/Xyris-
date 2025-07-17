@@ -95,10 +95,10 @@ interface _GlobalComponents {
     'FormDescription': typeof import("../components/ui/form/index")['FormDescription']
     'FORMITEMINJECTIONKEY': typeof import("../components/ui/form/index")['FORM_ITEM_INJECTION_KEY']
     'Input': typeof import("../components/ui/input/index")['Input']
+    'Label': typeof import("../components/ui/label/index")['Label']
     'Popover': typeof import("../components/ui/popover/index")['Popover']
     'PopoverTrigger': typeof import("../components/ui/popover/index")['PopoverTrigger']
     'PopoverContent': typeof import("../components/ui/popover/index")['PopoverContent']
-    'Label': typeof import("../components/ui/label/index")['Label']
     'Select': typeof import("../components/ui/select/index")['Select']
     'SelectValue': typeof import("../components/ui/select/index")['SelectValue']
     'SelectTrigger': typeof import("../components/ui/select/index")['SelectTrigger']
@@ -236,10 +236,10 @@ interface _GlobalComponents {
     'LazyFormDescription': LazyComponent<typeof import("../components/ui/form/index")['FormDescription']>
     'LazyFORMITEMINJECTIONKEY': LazyComponent<typeof import("../components/ui/form/index")['FORM_ITEM_INJECTION_KEY']>
     'LazyInput': LazyComponent<typeof import("../components/ui/input/index")['Input']>
+    'LazyLabel': LazyComponent<typeof import("../components/ui/label/index")['Label']>
     'LazyPopover': LazyComponent<typeof import("../components/ui/popover/index")['Popover']>
     'LazyPopoverTrigger': LazyComponent<typeof import("../components/ui/popover/index")['PopoverTrigger']>
     'LazyPopoverContent': LazyComponent<typeof import("../components/ui/popover/index")['PopoverContent']>
-    'LazyLabel': LazyComponent<typeof import("../components/ui/label/index")['Label']>
     'LazySelect': LazyComponent<typeof import("../components/ui/select/index")['Select']>
     'LazySelectValue': LazyComponent<typeof import("../components/ui/select/index")['SelectValue']>
     'LazySelectTrigger': LazyComponent<typeof import("../components/ui/select/index")['SelectTrigger']>
@@ -383,10 +383,10 @@ export const FormMessage: typeof import("../components/ui/form/index")['FormMess
 export const FormDescription: typeof import("../components/ui/form/index")['FormDescription']
 export const FORMITEMINJECTIONKEY: typeof import("../components/ui/form/index")['FORM_ITEM_INJECTION_KEY']
 export const Input: typeof import("../components/ui/input/index")['Input']
+export const Label: typeof import("../components/ui/label/index")['Label']
 export const Popover: typeof import("../components/ui/popover/index")['Popover']
 export const PopoverTrigger: typeof import("../components/ui/popover/index")['PopoverTrigger']
 export const PopoverContent: typeof import("../components/ui/popover/index")['PopoverContent']
-export const Label: typeof import("../components/ui/label/index")['Label']
 export const Select: typeof import("../components/ui/select/index")['Select']
 export const SelectValue: typeof import("../components/ui/select/index")['SelectValue']
 export const SelectTrigger: typeof import("../components/ui/select/index")['SelectTrigger']
@@ -524,10 +524,10 @@ export const LazyFormMessage: LazyComponent<typeof import("../components/ui/form
 export const LazyFormDescription: LazyComponent<typeof import("../components/ui/form/index")['FormDescription']>
 export const LazyFORMITEMINJECTIONKEY: LazyComponent<typeof import("../components/ui/form/index")['FORM_ITEM_INJECTION_KEY']>
 export const LazyInput: LazyComponent<typeof import("../components/ui/input/index")['Input']>
+export const LazyLabel: LazyComponent<typeof import("../components/ui/label/index")['Label']>
 export const LazyPopover: LazyComponent<typeof import("../components/ui/popover/index")['Popover']>
 export const LazyPopoverTrigger: LazyComponent<typeof import("../components/ui/popover/index")['PopoverTrigger']>
 export const LazyPopoverContent: LazyComponent<typeof import("../components/ui/popover/index")['PopoverContent']>
-export const LazyLabel: LazyComponent<typeof import("../components/ui/label/index")['Label']>
 export const LazySelect: LazyComponent<typeof import("../components/ui/select/index")['Select']>
 export const LazySelectValue: LazyComponent<typeof import("../components/ui/select/index")['SelectValue']>
 export const LazySelectTrigger: LazyComponent<typeof import("../components/ui/select/index")['SelectTrigger']>

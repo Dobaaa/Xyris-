@@ -3,42 +3,42 @@ import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import crypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getResponseStatus, useSession, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, getResponseStatusText } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/h3/dist/index.mjs';
-import { escapeHtml } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/@vue/shared/dist/shared.cjs.js';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/vue/server-renderer/index.mjs';
-import { klona } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/klona/dist/index.mjs';
-import defu, { defuFn, defu as defu$1 } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/defu/dist/defu.mjs';
-import destr, { destr as destr$1 } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/destr/dist/index.mjs';
-import { snakeCase } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/scule/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/unhead/dist/server.mjs';
-import { stringify, uneval } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/devalue/index.js';
-import { isVNode, toValue, isRef } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/vue/index.mjs';
-import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/unhead/dist/plugins.mjs';
-import { createHooks } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/unstorage/drivers/fs.mjs';
-import { digest, hash as hash$1 } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/ohash/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getResponseStatus, useSession, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, getResponseStatusText } from 'file://D:/Xyris/node_modules/h3/dist/index.mjs';
+import { escapeHtml } from 'file://D:/Xyris/node_modules/@vue/shared/dist/shared.cjs.js';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://D:/Xyris/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://D:/Xyris/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file://D:/Xyris/node_modules/vue/server-renderer/index.mjs';
+import { klona } from 'file://D:/Xyris/node_modules/klona/dist/index.mjs';
+import defu, { defuFn, defu as defu$1 } from 'file://D:/Xyris/node_modules/defu/dist/defu.mjs';
+import destr, { destr as destr$1 } from 'file://D:/Xyris/node_modules/destr/dist/index.mjs';
+import { snakeCase } from 'file://D:/Xyris/node_modules/scule/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://D:/Xyris/node_modules/unhead/dist/server.mjs';
+import { stringify, uneval } from 'file://D:/Xyris/node_modules/devalue/index.js';
+import { isVNode, toValue, isRef } from 'file://D:/Xyris/node_modules/vue/index.mjs';
+import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://D:/Xyris/node_modules/unhead/dist/plugins.mjs';
+import { createHooks } from 'file://D:/Xyris/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file://D:/Xyris/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://D:/Xyris/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://D:/Xyris/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://D:/Xyris/node_modules/unstorage/drivers/fs.mjs';
+import { digest, hash as hash$1 } from 'file://D:/Xyris/node_modules/ohash/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file://D:/Xyris/node_modules/radix3/dist/index.mjs';
 import { readFile } from 'node:fs/promises';
-import consola, { consola as consola$1 } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/youch-core/build/index.js';
-import { Youch } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/nitropack/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/source-map/source-map.js';
+import consola, { consola as consola$1 } from 'file://D:/Xyris/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file://D:/Xyris/node_modules/youch-core/build/index.js';
+import { Youch } from 'file://D:/Xyris/node_modules/nitropack/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file://D:/Xyris/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { getContext } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/errx/dist/index.js';
+import { getContext } from 'file://D:/Xyris/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/Xyris/node_modules/errx/dist/index.js';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname as dirname$1, resolve as resolve$1, basename } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/pathe/dist/index.mjs';
-import { getIcons } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/@iconify/utils/lib/index.mjs';
-import { collections } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/.nuxt/nuxt-icon-server-bundle.mjs';
-import { walkResolver } from 'file://C:/Users/TEMP/nuxt3-ecomerece-starter/node_modules/unhead/dist/utils.mjs';
+import { dirname as dirname$1, resolve as resolve$1, basename } from 'file://D:/Xyris/node_modules/pathe/dist/index.mjs';
+import { getIcons } from 'file://D:/Xyris/node_modules/@iconify/utils/lib/index.mjs';
+import { collections } from 'file://D:/Xyris/.nuxt/nuxt-icon-server-bundle.mjs';
+import { walkResolver } from 'file://D:/Xyris/node_modules/unhead/dist/utils.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/TEMP/nuxt3-ecomerece-starter/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"D:/Xyris/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -50,11 +50,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/TEMP/nuxt3-ecomerece-starter","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/TEMP/nuxt3-ecomerece-starter/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/TEMP/nuxt3-ecomerece-starter/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/TEMP/nuxt3-ecomerece-starter/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Users/TEMP/nuxt3-ecomerece-starter/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/Xyris","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/Xyris/server","watchOptions":{"ignored":[null]}}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/Xyris/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/Xyris/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:/Xyris/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1499,13 +1499,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _bZB9S0_No9jB0Gbl6YXdEGJt9vaSzCzo50YyrKSzC3A = (function(nitro) {
+const _1aKZDaUUVVceg9oHTVMsoX8o7FFPYiLcHQL1GV80U = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "C:/Users/TEMP/nuxt3-ecomerece-starter";
+const rootDir = "D:/Xyris";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
@@ -1524,7 +1524,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _73beG0uEmZz0YEDHoI2l4ofJmtrOp44BkbI52n9qL4 = (nitroApp) => {
+const _mHSFASc48gk0oviqjOpUOilJYHOJZyo8oIydb_8M7Q = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -1593,7 +1593,7 @@ function onConsoleLog(callback) {
   consola$1.wrapConsole();
 }
 
-const _CZJBV08ayY9WiyKyCKP7EK5ajqMzN8o_7naoFO8XmVw = defineNitroPlugin((nitroApp) => {
+const _NwFX2Z88n8cy73vWlx23Z7BdGO8BII9XEhRlTermnCs = defineNitroPlugin((nitroApp) => {
   if (process.env.NUXT_OAUTH_FACEBOOK_CLIENT_ID && process.env.NUXT_OAUTH_FACEBOOK_CLIENT_SECRET || process.env.NUXT_OAUTH_INSTAGRAM_CLIENT_ID && process.env.NUXT_OAUTH_INSTAGRAM_CLIENT_SECRET) {
     nitroApp.hooks.hook("render:html", (html) => {
       html.head.unshift(`
@@ -1610,9 +1610,9 @@ const _CZJBV08ayY9WiyKyCKP7EK5ajqMzN8o_7naoFO8XmVw = defineNitroPlugin((nitroApp
 });
 
 const plugins = [
-  _bZB9S0_No9jB0Gbl6YXdEGJt9vaSzCzo50YyrKSzC3A,
-_73beG0uEmZz0YEDHoI2l4ofJmtrOp44BkbI52n9qL4,
-_CZJBV08ayY9WiyKyCKP7EK5ajqMzN8o_7naoFO8XmVw
+  _1aKZDaUUVVceg9oHTVMsoX8o7FFPYiLcHQL1GV80U,
+_mHSFASc48gk0oviqjOpUOilJYHOJZyo8oIydb_8M7Q,
+_NwFX2Z88n8cy73vWlx23Z7BdGO8BII9XEhRlTermnCs
 ];
 
 const assets = {};
@@ -1640,7 +1640,7 @@ function getAsset (id) {
 
 const METHODS = /* @__PURE__ */ new Set(["HEAD", "GET"]);
 const EncodingMap = { gzip: ".gz", br: ".br" };
-const _es2rAj = eventHandler((event) => {
+const _WQn7V8 = eventHandler((event) => {
   if (event.method && !METHODS.has(event.method)) {
     return;
   }
@@ -1823,7 +1823,7 @@ function _useSession(event, config = {}) {
 
 const warnOnceSet = /* @__PURE__ */ new Set();
 const DEFAULT_ENDPOINT = "https://api.iconify.design";
-const _Zj6eXL = defineCachedEventHandler(async (event) => {
+const _Mbmf1z = defineCachedEventHandler(async (event) => {
   const url = getRequestURL(event);
   if (!url)
     return createError({ status: 400, message: "Invalid icon request" });
@@ -1881,12 +1881,12 @@ const _Zj6eXL = defineCachedEventHandler(async (event) => {
   // 1 week
 });
 
-const _j0rHU2 = eventHandler(async (event) => {
+const _EGShgb = eventHandler(async (event) => {
   await clearUserSession(event);
   return { loggedOut: true };
 });
 
-const _zWRib5 = eventHandler(async (event) => {
+const _7cdifA = eventHandler(async (event) => {
   const session = await getUserSession(event);
   if (Object.keys(session).length > 0) {
     await sessionHooks.callHookParallel("fetch", session, event);
@@ -1954,8 +1954,8 @@ function setSSRError(ssrContext, error) {
 
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
-const getServerEntry = () => import('file://C:/Users/TEMP/nuxt3-ecomerece-starter/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
-const getClientManifest = () => import('file://C:/Users/TEMP/nuxt3-ecomerece-starter/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file://D:/Xyris/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file://D:/Xyris/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {
@@ -2201,16 +2201,16 @@ async function getIslandContext(event) {
   return ctx;
 }
 
-const _lazy_xzkVkO = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_wQe115 = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '', handler: _es2rAj, lazy: false, middleware: true, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_xzkVkO, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_nuxt_icon/:collection', handler: _Zj6eXL, lazy: false, middleware: false, method: undefined },
-  { route: '/api/_auth/session', handler: _j0rHU2, lazy: false, middleware: false, method: "delete" },
-  { route: '/api/_auth/session', handler: _zWRib5, lazy: false, middleware: false, method: "get" },
+  { route: '', handler: _WQn7V8, lazy: false, middleware: true, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_wQe115, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_nuxt_icon/:collection', handler: _Mbmf1z, lazy: false, middleware: false, method: undefined },
+  { route: '/api/_auth/session', handler: _EGShgb, lazy: false, middleware: false, method: "delete" },
+  { route: '/api/_auth/session', handler: _7cdifA, lazy: false, middleware: false, method: "get" },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_xzkVkO, lazy: true, middleware: false, method: undefined }
+  { route: '/**', handler: _lazy_wQe115, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
